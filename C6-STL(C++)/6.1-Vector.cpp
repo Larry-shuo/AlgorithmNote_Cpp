@@ -10,6 +10,7 @@ using namespace std;
     //自定义vector大小与初值
     vetcor<int> vi(n,1) //大小为n（可以为变量），值全为1
     vector<vector<int> > name(n, vector<int>(m, 1)); //大小为n*m，初值为1
+    vector A(n, vector(m,vector<int>(k)));//三维 n * m * k
 
 2.访问
     (1) 下标
