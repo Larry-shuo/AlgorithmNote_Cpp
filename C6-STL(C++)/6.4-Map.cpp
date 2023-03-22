@@ -1,4 +1,6 @@
 #include<map>
+using namespace std;
+
 映射，从任何类型映射到任何类型,内部自动排序(红黑树)
 默认自动排序，按键值从小到大
 
@@ -40,5 +42,16 @@
     (1) 建立字符串（字符）与数字之间的映射
     (2) 判断大整数或其他数据类型是否存在,当作bool型使用
     (3) 字符串到字符串的映射
-    //map的键与值是唯一的，若需要一键对多值，使用multimap
+
     /*unordered_map,不排序的map*/ #include<unordered_map>
+
+
+//5
+map的键与值是唯一的，若需要一键对多值，使用multimap
+
+//使用 insert() 添加元素
+    multimap1.insert({1, "hello"});
+    multimap1.insert(pair<int, string>(3, "scott"));
+    multimap1.insert(pair(2, "C++17 wirte"));   //C++17 的写法s
+
+    
