@@ -1,14 +1,14 @@
 #include<vector>
 using namespace std;
 
-1.定义
+//1.定义
     vector<int> name;
     vector<vector<int> > name; // > >之间有一个空格，防止被认为是>>移位操作
     //vector数组
     vector<int> vi[100];
 
     //自定义vector大小与初值
-    vetcor<int> vi(n,1) //大小为n（可以为变量），值全为1
+    vector<int> vi(n,1); //大小为n（可以为变量），值全为1
     vector<vector<int> > name(n, vector<int>(m, 1)); //大小为n*m，初值为1
     vector A(n, vector(m,vector<int>(k)));//三维 n * m * k
 
@@ -22,7 +22,6 @@ using namespace std;
             for(int i=1;i<=5;i++){
                 vi.push_back(i);
             }
-            
 
             写法1：
             vector<int>::iterator it=vi.begin();
@@ -32,6 +31,7 @@ using namespace std;
 
             写法2：
             for(vector<int>::iterator it=vi.begin();it!=vi.end();it++){}
+            for(auto it=vi.begin();it!=vi.end();it++){}
         }
     vi.end()为尾元素的下一位地址//习惯左开右闭  [ , )
 
@@ -47,6 +47,12 @@ using namespace std;
         vi.erase(first,last);//[first,last);
     (7) //两个vector之间可以判断是否相等
         if(vi1==vi2){}
+
+    (8)截取vector
+        1. 直接构造 vector<int> v2(v.begin(),v.begin()+j);
+        
+        2. assign() Arr.assign(First,Second);   //First和Second是迭代器, [First,Second)
+
 
 4.用途
     (1).储存不确定个数的数据
