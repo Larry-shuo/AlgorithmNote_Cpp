@@ -22,6 +22,12 @@ using namespace std;
         printf("%c",*it);
         支持 str.begin()+3;
 
+        //反向迭代器
+        auto it=s.rbegin();
+        
+        //获取最后一个字符
+        char c=s.back();
+
 3.常用函数
     (1) +=//字符串拼接
         str3=str1+str2;
