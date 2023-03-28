@@ -25,6 +25,8 @@ using namespace std;
         //反向迭代器
         auto it=s.rbegin();
         
+        //获取index处的字符
+        char =s.at(index);
         //获取最后一个字符
         char c=s.back();
 
