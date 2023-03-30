@@ -35,3 +35,7 @@ using namespace std;
     //（若不存在，返回可以插入该元素的位置）
     upper_bound(first,last,val)
     //......第一个大于val的位置......
+
+//8.元素去重
+iterator unique(iterator it_1,iterator it_2);//先对容器排序，“删除”序列中所有相邻的重复元素(只保留一个)
+//返回一个迭代器，指向去重后的容器中不重复序列的最后一个元素的下一位
