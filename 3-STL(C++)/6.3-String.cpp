@@ -69,10 +69,10 @@ using namespace std;
     (10) str.replace(pos,len,str2);//从 pos 位置开始，长度为 len 的子串替换为str2
          str.replace(it1,it2,str2);// [it1,it2) 范围的子串替换为str2
 
-    (11) //返回字符串对应的数字
-        int stoi()      
-        long long stoll()
-        double stod()
+    11. //返回字符串对应的数字
+        int stoi(string s);    
+        long long stoll(string s);
+        double stod(string s);
 
     (12) string s = to_string(i); //将数字 i 转换为字符串表示形式
 
