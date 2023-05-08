@@ -39,5 +39,14 @@ using namespace std;
 8. iterator unique(iterator it_1,iterator it_2);//先对容器排序，“删除”序列中所有相邻的重复元素(只保留一个)
     //返回一个迭代器，指向去重后的容器中不重复序列的最后一个元素的下一位
 
-9.  iterator max_element(iterator begin,iterator end,[compare cmp]),min_element(...)
-    //寻找容器中最大值与最小值,返回一个迭代器
+//寻找容器中最大值与最小值,返回一个迭代器
+    iterator max_element(iterator begin,iterator end,[compare cmp]),min_element(...);
+
+
+//统计出现次数
+    //count()返回值为target的元素个数
+    int num1=count(vector.begin(),vector.begin(),target);
+
+    //count_if()返回满足pred条件的值的个数
+    int num2=count_if(iterator it1,iterator it2,pred);//pred为一元谓词，接受一个参数并返回bool，(即一个cmp函数)
+
