@@ -40,7 +40,8 @@ using namespace std;
     //返回一个迭代器，指向去重后的容器中不重复序列的最后一个元素的下一位
 
 //寻找容器中最大值与最小值,返回一个迭代器
-    iterator max_element(iterator begin,iterator end,[compare cmp]),min_element(...);
+    iterator max_element(iterator begin,iterator end,compare cmp);//cmp为比较函数
+    iterator min_element(A.begin(),A.end(),cmp);
 
 
 //统计出现次数
