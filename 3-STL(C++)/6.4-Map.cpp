@@ -43,7 +43,8 @@ using namespace std;
     (2) 判断大整数或其他数据类型是否存在,当作bool型使用
     (3) 字符串到字符串的映射
 
-    /*unordered_map,不排序的map*/ #include<unordered_map>
+    #include<unordered_map>  /*unordered_map,不排序的map
+    //map内部使用红黑树排序存放，unordered_map内部使用hash值存储，部分数据结构没有对应的hash值，例如vector,pair等
 
 
 //5
