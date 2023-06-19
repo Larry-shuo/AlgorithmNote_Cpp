@@ -13,3 +13,8 @@ iota(vector.begin(), vector.end(), number);//number为初值,第一个元素值
 int sum = accumulate(v.begin(),v.emd(),0);//第三个参数为累计的初值
 
 string sum = accumulate(v.begin(), v.end(), string(""));
+
+//迭代器：
+begin() 与 end() 相匹配
+rbegin() 与 rend() 相匹配
+反向迭代器与正向迭代器返回的不是一个类型
