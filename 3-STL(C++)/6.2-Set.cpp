@@ -1,12 +1,19 @@
-内部自动 递增 有序，不含重复元素
+//内部自动 递增 有序，不含重复元素
 #include<set>
-
+#include<unordered_set>
 using namespace std;
+
 1.定义
     set<typename> name;
     set<int> st;
     set<set<int> > stt;
     set<int> a[100];
+
+    //多重集
+    multiset<int> S;
+
+    //无序集,内部以散列代替红黑树，速度更快，内部元素顺序与添加元素顺序无关!!
+    unordered_set<int> S;
 
 2.元素访问
     //只能通过迭代器访问
